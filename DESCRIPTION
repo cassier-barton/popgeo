@@ -1,0 +1,29 @@
+Package: popgeo
+Type: Package
+Title: Retrieve Population Data And Geographic Lookups For UK Geographic Areas
+Version: 1.0.0
+Author: Cassie Barton <bartonc@parliament.uk>
+Maintainer: Cassie Barton <bartonc@parliament.uk>
+Description: This package provides some basic functions to retrieve 2011 Census
+   data and population estimates from Nomis, as well as a series of lookups
+   for geographic areas. It's stuff that I find useful as a population
+   statistician at the Commons Library.
+License: MIT + file LICENSE. Contains public sector information licensed under the Open Government Licence v3.0.
+Encoding: UTF-8
+LazyData: true
+Imports:
+  dplyr,
+  magrittr,
+  nomisr,
+  janitor,
+  httr,
+  jsonlite,
+  usethis,
+  tibble,
+  stringr,
+  tidyr,
+  readr,
+  purrr
+RoxygenNote: 7.2.0
+Depends: 
+    R (>= 2.10)
