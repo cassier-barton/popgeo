@@ -52,6 +52,23 @@ These functions will return data for most UK geographies for which data is avail
 If you need data for Built Up Areas, Built Up Area Subdivisions, wards, or major towns and cities, then the functions below can provide you with a lookup that will help you construct your own totals from Output Areas.
 
 ## Functions to get lookups for UK geographies
+These functions retrieve lookup tables between different types of UK geographies.
+
+[add something about up to date ness!]
 
 MSOA names:
+ - `get_msoanames` retrieves the latest [MSOA Names dataset](https://houseofcommonslibrary.github.io/msoanames/) from the Commons Library. The dataframe contains, for each 2011 MSOA in England and Wales, the ONS name and code, the Commons Library name, and the local authority that the MSOA is in.
 
+The below functions retrieve data from the ONS Geoportal API. All require you to specify a year:
+ - `get_la2re` returns a local authority to English region lookup
+ - `get_la2n` returns a local authority to UK nation lookup
+ - `get_la2rn` returns a combined lookup showing the English region or UK devolved nation a local authority is in
+ - `get_ward2la` returns a ward to local authority lookup for a single specified local authority
+ - `get_ward2con` returns a best-fit ward to constituency lookup for a single specified parliamentary constituency
+ - `get_oa2ward` returns a 2011 Output Area to ward lookup for a given list of wards
+ - `get_oa2bua` returns a 2011 Output Area to Built Up Area lookup for a given list of Built Up Areas
+ - `get_oa2buasd` returns a 2011 Output Area to Built Up Area Subdivision lookup for a given list of Built Up Area Subdivisions
+
+The below are static datasets included in the package. They aren't functions, but you can assign them to objects (e.g. `my_lookup <- con2rn`):
+ - `con2rn` is a constituency to English region or UK devolved nation lookup
+ - `la_changes` is a lookup showing local authority mergers from 2019 onwards
