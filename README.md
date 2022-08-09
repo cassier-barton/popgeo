@@ -14,7 +14,7 @@ All of the functions in this package ask you to provide ONS geography codes when
 You can find lists of geography codes on the [ONS Open Geography Portal website.](https://geoportal.statistics.gov.uk/)
 
 ## Licensing
-!!!Don't forget to add this bit!!!
+The code in this packaged is licensed under the MIT license. Datasets provided or retrieved using this package are subject to their own licensing conditions. All datasets are licensed under either the Open Government License or Open Parliament License - please look at sources for details.
 ## Installation
 Install from Github using remotes.
 ```
@@ -54,7 +54,9 @@ If you need data for Built Up Areas, Built Up Area Subdivisions, wards, or major
 ## Functions to get lookups for UK geographies
 These functions retrieve lookup tables between different types of UK geographies.
 
-[add something about up to date ness!]
+These functions **will not necessarily retrieve the most up-to-date lookups available**. ONS Open Geography often publish lookups as Excel files some time before making them available via their API (for example, 2021 ward lookups are available for Excel download but not on the API at time of publication).
+
+The functions retrieve data for the latest year available on the API at time of publication (August 2022). However, if ONS Open Geography release new or revised boundaries after this date, the functions won't necessarily successfully retrieve them. Check the [ONS Open Geography portal](https://geoportal.statistics.gov.uk/) if you're unsure what the latest available data is.
 
 MSOA names:
  - `get_msoanames` retrieves the latest [MSOA Names dataset](https://houseofcommonslibrary.github.io/msoanames/) from the Commons Library. The dataframe contains, for each 2011 MSOA in England and Wales, the ONS name and code, the Commons Library name, and the local authority that the MSOA is in.
