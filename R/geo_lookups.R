@@ -1,8 +1,8 @@
 #' Get a dataframe with the latest Commons Library MSOA names
 #'
-#' Returns a dataframe that shows, for each MSOA in England and Wales, the ONS
+#' Returns a dataframe that shows, for each 2011 MSOA in England and Wales, the ONS
 #' name and code for the MSOA, the Commons Library name, and the local authority
-#' that the MSOA name is in. Data is retrieved from visual.parliament.uk.
+#' that the MSOA is in.
 #'
 #' @return A dataframe with ONS 9-digit code, ONS name in English and Welsh, Commons Library name in English and Welsh (Welsh MSOAs only), and LA name.
 #'

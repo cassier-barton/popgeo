@@ -46,10 +46,14 @@
 #'
 #' @format A data frame with 25 observations and 7 variables.
 #' \describe{
-#' \item{oa_code}{9-digit ONS code of a 2011 Census Output Area}
-#' \item{con_code}{9-digit ONS code of the UK parliamentary constituency the Output Area best-fits to}
-#' \item{con_name}{name of the UK parliamentary constituency the Output Area best-fits to}
-#' }
+#' \item{new_la_code}{9-digit ONS code of the new local authority}
+#' \item{new_la_name}{name of the new local authority}
+#' \item{old_la_code}{9-digit ONS code of each local authority that merged to create the new one}
+#' \item{old_la_name}{name of each local authority that merged to create the new one}
+#' \item{reg_code}{9-digit ONS code of the English region that the local authority is in}
+#' \item{reg_name}{name of the English region that the local authority is in}
+#' \item{change_year}{year that the change took place in}
+#'
 #'
 #' @source Commons Library analysis of ONS Open Geography datasets
 
